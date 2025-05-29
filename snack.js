@@ -13,6 +13,9 @@ function getInitials(nomeCompleto) {
 // 👉 "La funzione createSlug restituisce una stringa in lowercase."
 
 function createSlug(stringa) {
+    if (!stringa) {
+        throw new Error('il titolo non può essere vuoto');
+    }
     return stringa.toLowerCase().replaceAll(" ", "-");
 }
 
