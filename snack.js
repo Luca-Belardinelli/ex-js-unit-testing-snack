@@ -60,9 +60,14 @@ function isPalindrome(palindroma) {
 // 👉 "La funzione findPostById restituisce il post corretto dato l’array di post e l’id"
 // Creare uno o più test aggiuntivi che controllino che la struttura dati passati sia conforme(ogni post ha le proprietà id, title e slug, viene passato un id numerico).
 
+function findPostById(posts, id) {
+    return posts.find(p => p.id === id);
+}
+
 module.exports = {
     getInitials,
     createSlug,
     average,
     isPalindrome,
+    findPostById
 }
