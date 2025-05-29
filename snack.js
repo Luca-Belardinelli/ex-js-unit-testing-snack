@@ -13,7 +13,7 @@ function getInitials(nomeCompleto) {
 // 👉 "La funzione createSlug restituisce una stringa in lowercase."
 
 function createSlug(stringa) {
-    return stringa.toLowerCase();
+    return stringa.toLowerCase().replaceAll(" ", "-");
 }
 
 // 🏆 Snack 3
