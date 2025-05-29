@@ -1,5 +1,5 @@
 // importo le funzioni
-const { getInitials, createSlug, average } = require('./snack')
+const { getInitials, createSlug, average, isPalindrome } = require('./snack')
 
 
 //snack 1
@@ -20,4 +20,11 @@ test('La funzione average calcola la media aritmetica di un array di numeri.', (
 //snack 4
 test("La funzione createSlug sostituisce gli spazi con -.", () => {
     expect(createSlug("Questo è un test")).toBe("questo-è-un-test");
+})
+
+//snack 5
+test("La funzione isPalindrome verifica se una stringa è un palindromo.", () => {
+    expect(isPalindrome("otto")).toBeTruthy();
+    expect(isPalindrome("pokemon")).toBeFalsy();
+
 })
